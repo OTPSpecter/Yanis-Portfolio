@@ -1,18 +1,32 @@
 <!DOCTYPE HTML>
-<!--
-	Dimension by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
 		<title>Yanis Portfolio</title>
+		
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
+		<script>
+			document.addEventListener("DOMContentLoaded", function () {
+			  const lazyPDFs = document.querySelectorAll(".lazy-pdf");
+			  const observer = new IntersectionObserver((entries) => {
+				entries.forEach((entry) => {
+				  if (entry.isIntersecting) {
+					const iframe = entry.target;
+					iframe.src = iframe.dataset.src;
+					observer.unobserve(iframe); // Ne plus observer une fois chargé
+				  }
+				});
+			  });
+		  
+			  lazyPDFs.forEach((iframe) => observer.observe(iframe));
+			});
+		  </script>
+		  
+		  
 
 		<!-- Wrapper -->
 			<div id="wrapper">
@@ -25,7 +39,7 @@
 						<div class="content">
 							<div class="inner">
 								<h1> Yanis PONTHOU </h1>
-								
+								<h3>Développeur DevOps en alternance Chez Nokia</h3>
 							</div>
 						</div>
 						<nav>
@@ -46,32 +60,27 @@
 								<h2 class="major">Intro</h2>
 								<span class="image main"><img src="images/IMG_8336.jpg" alt="" /></span>
 								<h1> Présentation </h1> 
-								<h5> 12/06/2023 </h5>
-								<h3> MOI </h3>
+								<p style="font-size: large;"> Alternant en BUT Informatique et membre d'une équipe <strong>DevOps</strong> chez Nokia</p>
+								<p style="font-size: 1.5em;"> <strong>Devenir ingénieur en cyber-sécurité spécialisé dans les systèmes IA : un objectif concret !</strong></p>
+								<p> Actuellement en 3ᵉ année de BUT Informatique à l'IUT de Lannion, je prépare une poursuite d’études en <strong>école d’ingénieur</strong>. 
+									Mon ambition est de devenir ingénieur en cyber-sécurité, avec un intérêt particulier pour les défis liés à la <strong>sécurisation des systèmes basés 
+										sur l’IA</strong>. Passionné par les nouvelles technologies, j’aime résoudre des problèmes complexes et protéger les systèmes informatiques. 
+									Mes 3 années d'études en informatique m'ont permis d'acquérir une base solide, et mon <strong>alternance chez Nokia</strong> m’a offert une première 
+									expérience concrète en DevOps et dans la découverte des problématiques liées à l’implémentation de systèmes IA, renforçant ainsi 
+									mon projet professionnel.</p>
+								<p style="font-size: 1.5em;"> <strong>MOI</strong> </p>
 								<p> 
-									Je m'appelle Yanis PONTHOU, mon entourage me définit comme quelqu’un de déterminé, très sérieux et qui sait s’adapter facilement. Au niveau sportif, depuis l'âge de 6 ans je fais de la natation car c’est un sport qui me permet de décompresser et de me détendre mais aussi me permet de me surpasser depuis je n'ai jamais arrêté.
-								</p>
-								<h3> Parcours scolaire </h1>
-								<p> Je suis actuellement étudiant en <a target="_blank" href="images/butinfor.pdf"
-									download="PROGRAMME_DUT.pdf">BUT Informatique</a>  à <a target="_blank" href="https://iut-lannion.univ-rennes.fr/"> L'IUT de Lannion </a>. </p>
-								<p> Durant mes années de lycée mes spécialités étaient la NSI et les Mathématiques et en première la SES. Les matières que j'ai adoré sont la NSI et les cours de sciences économiques que j'ai pu effectuer en première pour l'économie.</p>
-								<h3> Mon projet d'avenir </h3>
-								<p> Mon projet est de devenir ingénieur en cyber-sécurité/défense. Je me laisse deux ans pour affiner mon choix entre les deux. Pour cela, j'ai choisi le 
-									BUT informatique pour ensuite continuer vers une école d'ingénieur. Pourquoi ce projet d'ingénieur en cyber-sécurité/défense, j'ai compris que je voulais faire ça car 
-									depuis tout petit j'aime aider les autres, j'aime toutes les nouvelles technologies et bien sûr l'informatique en mélangeant les deux, j'ai trouvé cette voie là. De plus la 
-									spécialité NSI et mes activités personnelles <a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-BHGK7QG0PH.png">(Certificat Tryhackme obtenu)</a> 
-									ont confirmé ce choix.. </p>
+									Je m'appelle Yanis Ponthou. Mes proches me décrivent comme une personne déterminée, sérieuse et adaptable, des qualités que j'applique à la fois dans ma vie professionnelle et personnelle. Depuis l'âge de 6 ans, je pratique la natation, un sport qui m’aide à me dépasser et à maintenir un équilibre essentiel entre effort et détente. Ces expériences m'ont appris à gérer la discipline et à atteindre mes objectifs.							</p>
+								<p style="font-size: 1.5em;"> <strong>Parcours scolaire</strong>
+								<p>Je suis actuellement en 3ᵉ année de BUT Informatique à l'IUT de Lannion, où je poursuis mes études en alternance depuis ma 2ᵉ année. Mon alternance au sein de Nokia m’a permis d’allier théorie et pratique, en travaillant au sein d'une équipe DevOps sur des problématiques concrètes et innovantes.
+									Avant cela, au lycée, mes spécialités étaient la NSI et les Mathématiques, avec une option SES en première. Ces matières m'ont permis de développer des compétences solides en logique, résolution de problèmes et compréhension des systèmes complexes. J’ai particulièrement apprécié la NSI, qui a confirmé mon intérêt pour l’informatique et m’a orienté vers mon parcours actuel</p>
 							</article>
 
 <!-- Work -->
 							<article id="work">
 								<h2 class="major">Certificats</h2>
 								<span class="image main"><img src="images/pic0v7.png" alt="" /></span>
-								<h1> <u>Baccalauréat</u> </h1>
-								<span class="image main"><img src="images/bac.jpg" alt="" /></span>
-								<blockquote> Admis avec mention bien
-									Spécialité : NSI & Mathématiques </blockquote>
-
+								
 								<h1> <u>Tryhackme</u> </h1>
 								<h3> Advent of cyber 3</h3>
 								<span class="image main"><img src="images/thm.png" alt="" /></span>
@@ -84,31 +93,45 @@
 									<li>Cloud Hacking</li>
 									<li>Defensive Blue Teaming</li>
 								</ul>
-								<h1><u> PIX</u></h1>
-								<h5> Certificat délivré le 8 février 2022 valable 3 ans</h5>
 								
-								<span class="image main"><img src="images/pdf1.jpg" alt="" /></span>
-
-								<h1><u> MOOC de l'ANSSI </u></h1>
-								<p> En cours de réalisation </p>
-
 								<h1><u> TryHackme </u></h1>
 								<h3> parcours "Pre Security" </h3>
 								<p> En cours de réalisation </p>
 								<span class="image main"><img src="images/presec.PNG" alt="" /></span>
+								
+								<h1><u> MOOC de l'ANSSI </u></h1>
+								<p> En cours de réalisation </p>
+								
+								<h1><u> PIX</u></h1>
+								<h5> Certificat délivré le 8 février 2022 valable 3 ans</h5>
+								<span class="image main"><img src="images/pdf1.jpg" alt="" /></span>
+
+								<h1> <u>Baccalauréat</u> </h1>
+								<span class="image main"><img src="images/bac.jpg" alt="" /></span>
+								<blockquote> Admis avec mention bien
+									Spécialité : NSI & Mathématiques </blockquote>
 							</article>
   
 <!-- About -->
 							<article id="about">
 								<h2 class="major">Mes projets</h2>
 								<span class="image main"><img src="images/projet.png" alt="" /></span>
-								<h3>Projet Web : <a href="#config">.Config</a></li></h3>
-								<h3>Implémentation d'un besoin client : <a href="#puissance4">Puissance 4</a></li></h3>
-								<h3>Concevoir et développer un site Web : <a href="#site">KOH SPORT</a></li></h3>
-								<h3>Comparaison algorithmiques : <a href="#ia">"Ia" Puissance 4</a></li></h3>
-								<h3>Installation d’un Poste de Développement : <a href="#PDFMAKER">PDF Maker by Docker</a></li></h3>
-								<h3>Création d'une base de données : <a href="#TRANSMUS">Transmusicales</a></li></h3>
-								<h3>Découverte de l'environnement économique et écologique : <a href="#LVMH">LVMH</a></li></h3>
+								<ul>
+									<li style="font-size: large; margin-bottom: 10px;">AlaizhBreizh : <a href="#airbnb">Le projet</a></li>
+									<ul>
+										<li>
+											<p>Réalisation d'un site web de Type Airbnb pour la Breatagne</p>
+										</li>
+									</ul>
+									<li style="font-size: large; margin-bottom: 10px;">Website PokemonGO : <a href="#pokego"></a></li>
+									<li style="font-size: large; margin-bottom: 10px;">Projet Web : <a href="#config">.Config</a></li>
+									<li style="font-size: large; margin-bottom: 10px;">Implémentation d'un besoin client : <a href="#puissance4">Puissance 4</a></li>
+									<li style="font-size: large; margin-bottom: 10px;">Concevoir et développer un site Web : <a href="#site">KOH SPORT</a></li>
+									<li style="font-size: large; margin-bottom: 10px;">Comparaison algorithmiques : <a href="#ia">"Ia" Puissance 4</a></li>
+									<li style="font-size: large; margin-bottom: 10px;">Installation d’un Poste de Développement : <a href="#PDFMAKER">PDF Maker by Docker</a></li>
+									<li style="font-size: large; margin-bottom: 10px;">Création d'une base de données : <a href="#TRANSMUS">Transmusicales</a></li>
+									<li style="font-size: large; margin-bottom: 10px;">Découverte de l'environnement économique et écologique : <a href="#LVMH">LVMH</a></li>
+								</ul>
 							</article>
 
 <!-- Contact -->
@@ -118,7 +141,7 @@
 								<p> Mon mail : ponthou-y@tutanota.com </p>
 
 								<ul class="actions">
-									<li><a href="images/CV.pdf" download="Yanis_PONTHOU_CV" class="button icon solid fa-download">CV</a></li>
+									<li><a data-src="images/CV.pdf" download="Yanis_PONTHOU_CV" class="button icon solid fa-download">CV</a></li>
 								</ul>
 								<ul class="icons">
 									<li><a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-BHGK7QG0PH.png" class="icon brands fa-usb"><span class="label">Tryhackme</span></a></li>
@@ -126,6 +149,27 @@
 									<li><a href="https://www.linkedin.com/in/yanis-ponthou/" class="icon brands fa-linkedin"><span class="label">Instagram</span></a></li>
 									<li><a href="https://github.com/Sinay1005" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
 								</ul>
+							</article>
+
+							<article id="airbnb">
+								<h2 class="major">AlaizhBreizh</h2>
+								<h2> Description </h2>
+								<h3>Compétences</h3>
+								<blockquote>
+									Partir des exigences et aller jusqu’à une application complète
+								</blockquote>					 
+								 <h4>Langages/outils utilisés</h4>
+								 <ul>
+									<li>Figma</li>
+									<li>HTML/CSS</li>
+									<li>PHP</li>
+									<li>SQL</li>
+									<li>JavaScript</li>
+								</ul>
+								<p>Réalisation d'un site web de locations de logements en Bretagne dans le cadre universitaire, au sein d'une équipe de 7 personnes. Le projet a été mené sur 4 semaines en appliquant la méthode Scrum pour organiser la gestion et le développement collaboratif. Des présentations régulières des avancées ont été effectuées auprès de clients fictifs, simulant un contexte professionnel.</p>
+								<p><a href="https://github.com/OTPSpecter/MKWeb/tree/master" target="_blank">Lien du repository Github pour plus de détails</a></p>
+								<span class="image main"><img src="images/Alhaiz_Breizh_2.webp" alt="" /></span>
+								<span class="image main"><img src="images/airbnb.png" alt="" /></span>
 							</article>
 							
 <!-- .config -->
@@ -187,20 +231,14 @@
 							<p>Quelques images du code source</p>
 							<p><a href="https://github.com/Sinay1005/Puissance4" target="_blank">Lien pour accéder à la page github du projet</a></p>
 							
-							<span class="image main"><img src="images/init.png" alt="" /></span>
-							<span class="image main"><img src="images/afficher.png" alt="" /></span>
-							<span class="image main"><img src="images/jouer.png" alt="" /></span>
-							<span class="image main"><img src="images/estvainquyer.png" alt="" /></span>
-
+							<span class="image main"><img src="images/init.webp" alt="" /></span>
+							<span class="image main"><img src="images/afficher.webp" alt="" /></span>
+							<span class="image main"><img src="images/jouer.webp" alt="" /></span>
 
 							<p id="test">- Cahier de test -</p>
 							
-							<iframe src="images/cahier_test.pdf" frameborder="0" height="500px" width="100%"></iframe>
+							<iframe data-src="images/cahier_test.pdf" frameborder="0" height="500px" width="100%" class="lazy-pdf"></iframe>
 
-
-
-							<p id="doxy">- Documentation Doxygen -</p>
-							<iframe src="images/refman.pdf" frameborder="0" height="500px" width="100%"></iframe>
 						</article>
 <!-- .koh sport -->
 						<article id="site">
@@ -221,11 +259,11 @@
 							<p><a href="https://github.com/Sinay1005/KOHSPORT" target="_blank">Lien du repository Github pour plus de détails</a></p>
 
 
-							<iframe src="images/A21_Maquette-min.pdf" frameborder="0" height="500px" width="100%"></iframe>
+							<iframe data-src="images/A21_Maquette-min.pdf" frameborder="0" height="500px" width="100%" class="lazy-pdf"></iframe>
 
 							<p>La charte graphique</p>
 
-							<iframe src="images/A_21Charte_Graphique.pdf" frameborder="0" height="500px" width="100%"></iframe>
+							<iframe data-src="images/A_21Charte_Graphique.pdf" frameborder="0" height="500px" width="100%" class="lazy-pdf"></iframe>
 						</article>
 
 <!-- "Ia" Puissance 4-->
@@ -242,7 +280,7 @@
 							</ul>
 
 							<h3>Descriptif des stratégies</h3>
-							<iframe src="images/Ia.pdf" frameborder="0" height="500px" width="100%"></iframe>
+							<iframe data-src="images/Ia.pdf" frameborder="0" height="500px" width="100%" class="lazy-pdf"></iframe>
 							<h3>Code source</h3>
 							<p>Voici un exemple d'une des fonctions du code source</p>
 							<p><a href="https://github.com/Sinay1005/Puissance4/blob/main/IA/StrategieFinal_YANIS_ETHAN_ETHAN_1A2.c" target="_blank">Lien pour accéder à la page github du projet</a></p>
@@ -282,9 +320,9 @@
 							</ul>
 							
 							<a href="https://github.com/Sinay1005/PDFMAKER" target="_blank"> Lien du repository Github pour plus de détails</a>
-							<span class="image main"><img src="images/pdfmaker_lancement.png" alt="" /></span>
+							<span class="image main"><img src="images/pdfmaker_lancement.webp" alt="" /></span>
 							<h3>Documentation</h3>
-							<span class="image main"><img src="images/pdfmaker_readme.png" alt="" /></span>
+							<span class="image main"><img src="images/pdfmaker_readme.webp" alt="" /></span>
 						</article>
 
 <!-- TRANSMUS-->
@@ -312,7 +350,7 @@
 								<li>SQL</li>
 							</ul>
 							<h4>Livrable 1 | Diagramme de classe + rapport</h4>
-							<iframe src="images/BDD.pdf" frameborder="0" height="500px" width="100%"></iframe>
+							<iframe data-src="images/BDD.pdf" frameborder="0" height="500px" width="100%" class="lazy-pdf"></iframe>
 							<h4>Livrable 2 | Script SQL de création de la base de donnée</h4>
 							<pre>
 								<code>
@@ -468,11 +506,11 @@ FOREIGN KEY(se_deroule) REFERENCES _edition(nom_edition);
 								Découverte des politiques RSE des entreprises et prise de conscience des différentes formes d'action mises en place pour améliorer leur engagement en matière de responsabilité sociale. De plus, exploration de la matrice SWOT pour évaluer les forces, faiblesses, opportunités et menaces liées à la mise en œuvre de ces politiques.
 							</blockquote>
 							<h3>Diaporama : répartition des tâches et présentation de l'organisation choisie</h3>
-							<iframe src="images/RSE1.pdf" frameborder="0" height="500px" width="100%"></iframe>
+							<iframe data-src="images/RSE1.pdf" frameborder="0" height="500px" width="100%" class="lazy-pdf"></iframe>
 							<h3>Diaporama : Soutenance final</h3>
-							<iframe src="images/RSE2.pdf" frameborder="0" height="500px" width="100%"></iframe>
+							<iframe data-src="images/RSE2.pdf" frameborder="0" height="500px" width="100%" class="lazy-pdf"></iframe>
 							<h3>Dossier de fin projet</h3>
-							<iframe src="images/RSE3.pdf" frameborder="0" height="500px" width="100%"></iframe>
+							<iframe data-src="images/RSE3.pdf" frameborder="0" height="500px" width="100%" class="lazy-pdf"></iframe>
 
 							</article>
 
@@ -730,7 +768,6 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 				<!-- Footer -->
 					<footer id="footer">
-						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
 					</footer>
 
 			</div>
@@ -744,6 +781,5 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
 	</body>
 </html>
