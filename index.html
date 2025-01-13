@@ -1,504 +1,620 @@
 <!DOCTYPE HTML>
 <html>
-	<head>
-		<title>Yanis Portfolio</title>
-		
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
-		<script>
-			document.addEventListener("DOMContentLoaded", function () {
-			  const lazyPDFs = document.querySelectorAll(".lazy-pdf");
-			  const observer = new IntersectionObserver((entries) => {
+
+<head>
+	<title>Yanis Portfolio</title>
+
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+</head>
+
+<body class="is-preload">
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			const lazyPDFs = document.querySelectorAll(".lazy-pdf");
+			const observer = new IntersectionObserver((entries) => {
 				entries.forEach((entry) => {
-				  if (entry.isIntersecting) {
-					const iframe = entry.target;
-					iframe.src = iframe.dataset.src;
-					observer.unobserve(iframe); // Ne plus observer une fois chargé
-				  }
+					if (entry.isIntersecting) {
+						const iframe = entry.target;
+						iframe.src = iframe.dataset.src;
+						observer.unobserve(iframe); // Ne plus observer une fois chargé
+					}
 				});
-			  });
-		  
-			  lazyPDFs.forEach((iframe) => observer.observe(iframe));
 			});
-		  </script>
-		  
-		  
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+			lazyPDFs.forEach((iframe) => observer.observe(iframe));
+		});
+	</script>
 
-<!-- Header -->
-					<header id="header">
-						<div class="logo">
-							<i class="icon brands fa-y-combinator"></i>
-						</div>
-						<div class="content">
-							<div class="inner">
-								<h1> Yanis PONTHOU </h1>
-								<h3>Développeur DevOps en alternance chez Nokia</h3>
+
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Header -->
+		<header id="header">
+			<div class="logo">
+				<i class="icon brands fa-y-combinator"></i>
+			</div>
+			<div class="content">
+				<div class="inner">
+					<h1> Yanis PONTHOU </h1>
+					<h3>Développeur DevOps en alternance chez Nokia</h3>
+				</div>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="#intro">Intro</a></li>
+					<li><a href="#work">Certificats</a></li>
+					<li><a href="#about">Mes projets</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<!-- Main -->
+		<div id="main">
+
+			<!-- Intro -->
+			<article id="intro">
+				<h2 class="major">Intro</h2>
+				<span class="image main"><img src="images/IMG_8336.jpg" alt="" /></span>
+				<h1> Présentation </h1>
+				<p style="font-size: large;"> Alternant en BUT Informatique et membre d'une équipe
+					<strong>DevOps</strong> chez Nokia</p>
+				<p style="font-size: 1.5em;"> <strong>Devenir ingénieur en cyber-sécurité spécialisé dans les systèmes
+						IA : un objectif concret !</strong></p>
+				<p> Actuellement en 3ᵉ année de BUT Informatique à l'IUT de Lannion, je prépare une poursuite d’études
+					en <strong>école d’ingénieur</strong>.
+					Mon ambition est de devenir ingénieur en cyber-sécurité, avec un intérêt particulier pour les défis
+					liés à la <strong>sécurisation des systèmes basés
+						sur l’IA</strong>. Passionné par les nouvelles technologies, j’aime résoudre des problèmes
+					complexes et protéger les systèmes informatiques.
+					Mes 3 années d'études en informatique m'ont permis d'acquérir une base solide, et mon
+					<strong>alternance chez Nokia</strong> m’a offert une première
+					expérience concrète en DevOps et dans la découverte des problématiques liées à l’implémentation de
+					systèmes IA, renforçant ainsi
+					mon projet professionnel.</p>
+				<p style="font-size: 1.5em;"> <strong>MOI</strong> </p>
+				<p>
+					Je m'appelle Yanis Ponthou. Mes proches me décrivent comme une personne déterminée, sérieuse et
+					adaptable, des qualités que j'applique à la fois dans ma vie professionnelle et personnelle. Depuis
+					l'âge de six ans, je pratique la natation, un sport qui m’aide à me dépasser et à maintenir un
+					équilibre essentiel entre effort et détente. Ces expériences m'ont appris à faire preuve de
+					discipline et à atteindre mes objectifs. </p>
+				<p style="font-size: 1.5em;"> <strong>Parcours scolaire</strong>
+				<p>Je suis actuellement en 3ᵉ année de BUT Informatique à l'IUT de Lannion, où je poursuis mes études en
+					alternance depuis ma 2ᵉ année. Mon alternance au sein de Nokia m’a permis d’allier théorie et
+					pratique, en travaillant au sein d'une équipe DevOps sur des problématiques concrètes et innovantes.
+					Avant cela, au lycée, mes spécialités étaient la NSI et les Mathématiques, avec une option SES en
+					première. Ces matières m'ont permis de développer des compétences solides en logique, résolution de
+					problèmes et compréhension des systèmes complexes. J’ai particulièrement apprécié la NSI, qui a
+					confirmé mon intérêt pour l’informatique et m’a orienté vers mon parcours actuel</p>
+
+
+				<h3> <u>Timeline</u> </h3>
+				<ul>
+					<li>
+						BUT Informatique - IUT Lannion
+						<ul>
+							<li>
+								<strong>Septembre 2024 - en cours</strong> : Parcours C (administration, gestion et exploitation des données, en <u> alternance chez Nokia</u>)
+							</li>
+							<li>
+								<strong>Septembre 2023 - Août 2024</strong> : Parcours A (réalisation d'applications, en <u>alternance chez Nokia</u>)
+							</li>
+							<li>
+								<strong>Septembre 2022 - Août 2023</strong> : Parcours A (réalisation d'applications)
+							</li>
+						</ul>
+					</li>
+					<li>
+						BAC Général - Lycée Saint-Louis, Châteaulin
+						<ul>
+							<li>
+								Spécialité NSI, Mathématiques et SES <strong>(Obtention en 2022 - Mention Bien)</strong>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				
+			</article>
+
+			<!-- Work -->
+			<article id="work">
+				<h2 class="major">Certificats</h2>
+				<span class="image main"><img src="images/pic0v7.png" alt="" /></span>
+
+				<h1> <u>Tryhackme</u> </h1>
+				<h3> Advent of cyber 3</h3>
+				<span class="image main"><img src="images/thm.png" alt="" /></span>
+				<blockquote> Get started with Cyber Security in 25 days, by learning the basics and completing a new,
+					beginner friendly security exercise every day leading up until Christmas; an advent calendar but
+					with security challenges and not chocolate. </blockquote>
+				<ul>
+					<p> Ce défi de 25 jours a abordé ces 5 différents thèmes au travers de plusieurs épreuves avec des
+						questions tout au long pour permettre un sentiment de challenge.</p>
+					<li>Web Exploitation</li>
+					<li>Network Exploitation</li>
+					<li>OSINT</li>
+					<li>Cloud Hacking</li>
+					<li>Defensive Blue Teaming</li>
+				</ul>
+
+				<h1><u> TryHackme </u></h1>
+				<h3> parcours "Pre Security" </h3>
+				<p> En cours de réalisation </p>
+				<span class="image main"><img src="images/presec.PNG" alt="" /></span>
+
+				<h1><u> MOOC de l'ANSSI </u></h1>
+				<p> En cours de réalisation </p>
+
+				<h1><u> PIX</u></h1>
+				<h5> Certificat délivré le 8 février 2022 valable 3 ans</h5>
+				<span class="image main"><img src="images/pdf1.jpg" alt="" /></span>
+
+				<h1> <u>Baccalauréat</u> </h1>
+				<span class="image main"><img src="images/bac.jpg" alt="" /></span>
+				<blockquote> Admis avec mention bien
+					Spécialité : NSI & Mathématiques </blockquote>
+			</article>
+
+			<!-- About -->
+			<article id="about">
+				<h2 class="major">Mes projets</h2>
+				<span class="image main"><img src="images/projet.png" alt="" /></span>
+				<ul>
+					<li style="font-size: large; margin-bottom: 10px;"><a href="#concoursinfo">🏆 24H Info Challenge</a>
+					</li>
+					<li style="font-size: large; margin-bottom: 10px;"><a href="#airbnb">AlaizhBreizh</a></li>
+					<li style="font-size: large; margin-bottom: 10px;"><a href="#pokego">Projet WebApp PokémonGO</a>
+					</li>
+					<li style="font-size: large; margin-bottom: 10px;">Projet Web : <a href="#config">.Config</a></li>
+					<li style="font-size: large; margin-bottom: 10px;"><a href="#PageRank">Comment fonctionne le
+							PageRank</a></li>
+					<li style="font-size: large; margin-bottom: 10px;">Implémentation d'un besoin client : <a
+							href="#puissance4">Puissance 4</a></li>
+					<li style="font-size: large; margin-bottom: 10px;">Concevoir et développer un site Web : <a
+							href="#site">KOH SPORT</a></li>
+					<li style="font-size: large; margin-bottom: 10px;">Comparaison algorithmiques : <a href="#ia">"Ia"
+							Puissance 4</a></li>
+					<li style="font-size: large; margin-bottom: 10px;">Installation d’un Poste de Développement : <a
+							href="#PDFMAKER">PDF Maker by Docker</a></li>
+					<li style="font-size: large; margin-bottom: 10px;">Création d'une base de données : <a
+							href="#TRANSMUS">Transmusicales</a></li>
+					<li style="font-size: large; margin-bottom: 10px;">Découverte de l'environnement économique et
+						écologique : <a href="#LVMH">LVMH</a></li>
+				</ul>
+			</article>
+
+			<!-- Contact -->
+			<article id="contact">
+				<h2 class="major">Contact</h2>
+				<section>
+					<form id="contact-form">
+						<div class="fields">
+							<div class="field half">
+								<label for="demo-name">Prénom</label>
+								<input type="text" name="name" id="demo-name" placeholder="Prenom" required />
 							</div>
-						</div>
-						<nav>
-							<ul>
-								<li><a href="#intro">Intro</a></li>
-								<li><a href="#work">Certificats</a></li>
-								<li><a href="#about">Mes projets</a></li>
-								<li><a href="#contact">Contact</a></li>
-							</ul>
-						</nav>
-					</header>
-
-<!-- Main -->
-					<div id="main">
-
-<!-- Intro -->
-							<article id="intro">
-								<h2 class="major">Intro</h2>
-								<span class="image main"><img src="images/IMG_8336.jpg" alt="" /></span>
-								<h1> Présentation </h1> 
-								<p style="font-size: large;"> Alternant en BUT Informatique et membre d'une équipe <strong>DevOps</strong> chez Nokia</p>
-								<p style="font-size: 1.5em;"> <strong>Devenir ingénieur en cyber-sécurité spécialisé dans les systèmes IA : un objectif concret !</strong></p>
-								<p> Actuellement en 3ᵉ année de BUT Informatique à l'IUT de Lannion, je prépare une poursuite d’études en <strong>école d’ingénieur</strong>. 
-									Mon ambition est de devenir ingénieur en cyber-sécurité, avec un intérêt particulier pour les défis liés à la <strong>sécurisation des systèmes basés 
-										sur l’IA</strong>. Passionné par les nouvelles technologies, j’aime résoudre des problèmes complexes et protéger les systèmes informatiques. 
-									Mes 3 années d'études en informatique m'ont permis d'acquérir une base solide, et mon <strong>alternance chez Nokia</strong> m’a offert une première 
-									expérience concrète en DevOps et dans la découverte des problématiques liées à l’implémentation de systèmes IA, renforçant ainsi 
-									mon projet professionnel.</p>
-								<p style="font-size: 1.5em;"> <strong>MOI</strong> </p>
-								<p> 
-									Je m'appelle Yanis Ponthou. Mes proches me décrivent comme une personne déterminée, sérieuse et adaptable, des qualités que j'applique à la fois dans ma vie professionnelle et personnelle. Depuis l'âge de six ans, je pratique la natation, un sport qui m’aide à me dépasser et à maintenir un équilibre essentiel entre effort et détente. Ces expériences m'ont appris à faire preuve de discipline et à atteindre mes objectifs.							</p>
-								<p style="font-size: 1.5em;"> <strong>Parcours scolaire</strong>
-								<p>Je suis actuellement en 3ᵉ année de BUT Informatique à l'IUT de Lannion, où je poursuis mes études en alternance depuis ma 2ᵉ année. Mon alternance au sein de Nokia m’a permis d’allier théorie et pratique, en travaillant au sein d'une équipe DevOps sur des problématiques concrètes et innovantes.
-									Avant cela, au lycée, mes spécialités étaient la NSI et les Mathématiques, avec une option SES en première. Ces matières m'ont permis de développer des compétences solides en logique, résolution de problèmes et compréhension des systèmes complexes. J’ai particulièrement apprécié la NSI, qui a confirmé mon intérêt pour l’informatique et m’a orienté vers mon parcours actuel</p>
-							</article>
-
-<!-- Work -->
-							<article id="work">
-								<h2 class="major">Certificats</h2>
-								<span class="image main"><img src="images/pic0v7.png" alt="" /></span>
-								
-								<h1> <u>Tryhackme</u> </h1>
-								<h3> Advent of cyber 3</h3>
-								<span class="image main"><img src="images/thm.png" alt="" /></span>
-								<blockquote> Get started with Cyber Security in 25 days, by learning the basics and completing a new, beginner friendly security exercise every day leading up until Christmas; an advent calendar but with security challenges and not chocolate. </blockquote>
-								<ul>
-									<p> Ce défi de 25 jours a abordé ces 5 différents thèmes au travers de plusieurs épreuves avec des questions tout au long pour permettre un sentiment de challenge.</p>
-									<li>Web Exploitation</li>
-									<li>Network Exploitation</li>
-									<li>OSINT</li>
-									<li>Cloud Hacking</li>
-									<li>Defensive Blue Teaming</li>
-								</ul>
-								
-								<h1><u> TryHackme </u></h1>
-								<h3> parcours "Pre Security" </h3>
-								<p> En cours de réalisation </p>
-								<span class="image main"><img src="images/presec.PNG" alt="" /></span>
-								
-								<h1><u> MOOC de l'ANSSI </u></h1>
-								<p> En cours de réalisation </p>
-								
-								<h1><u> PIX</u></h1>
-								<h5> Certificat délivré le 8 février 2022 valable 3 ans</h5>
-								<span class="image main"><img src="images/pdf1.jpg" alt="" /></span>
-
-								<h1> <u>Baccalauréat</u> </h1>
-								<span class="image main"><img src="images/bac.jpg" alt="" /></span>
-								<blockquote> Admis avec mention bien
-									Spécialité : NSI & Mathématiques </blockquote>
-							</article>
-  
-<!-- About -->
-							<article id="about">
-								<h2 class="major">Mes projets</h2>
-								<span class="image main"><img src="images/projet.png" alt="" /></span>
-								<ul>
-									<li style="font-size: large; margin-bottom: 10px;"><a href="#concoursinfo">🏆 24H Info Challenge</a></li>
-									<li style="font-size: large; margin-bottom: 10px;"><a href="#airbnb">AlaizhBreizh</a></li>
-									<li style="font-size: large; margin-bottom: 10px;"><a href="#pokego">Projet WebApp PokémonGO</a></li>
-									<li style="font-size: large; margin-bottom: 10px;">Projet Web : <a href="#config">.Config</a></li>
-									<li style="font-size: large; margin-bottom: 10px;"><a href="#PageRank">Comment fonctionne le PageRank</a></li>
-									<li style="font-size: large; margin-bottom: 10px;">Implémentation d'un besoin client : <a href="#puissance4">Puissance 4</a></li>
-									<li style="font-size: large; margin-bottom: 10px;">Concevoir et développer un site Web : <a href="#site">KOH SPORT</a></li>
-									<li style="font-size: large; margin-bottom: 10px;">Comparaison algorithmiques : <a href="#ia">"Ia" Puissance 4</a></li>
-									<li style="font-size: large; margin-bottom: 10px;">Installation d’un Poste de Développement : <a href="#PDFMAKER">PDF Maker by Docker</a></li>
-									<li style="font-size: large; margin-bottom: 10px;">Création d'une base de données : <a href="#TRANSMUS">Transmusicales</a></li>
-									<li style="font-size: large; margin-bottom: 10px;">Découverte de l'environnement économique et écologique : <a href="#LVMH">LVMH</a></li>
-								</ul>
-							</article>
-
-<!-- Contact -->
-							<article id="contact">
-								<h2 class="major">Contact</h2>
-								<section>
-									<form id="contact-form">
-										<div class="fields">
-											<div class="field half">
-												<label for="demo-name">Prénom</label>
-												<input type="text" name="name" id="demo-name" placeholder="Prenom" required />
-											</div>
-											<div class="field half">
-												<label for="demo-email">Email</label>
-												<input type="email" name="email" id="demo-email" placeholder="Email@gmail.com" required />
-											</div>
-											<div class="field">
-												<label for="demo-message">Message</label>
-												<textarea name="message" id="demo-message" placeholder="Enter your message" rows="6" required></textarea>
-											</div>
-											<!-- Honeypot field to prevent spam -->
-											<input type="hidden" name="_gotcha" style="display:none !important" />
-										</div>
-										<ul class="actions">
-											<li><button type="submit" class="primary">Envoyer le Message</button></li>
-										</ul>
-									</form>
-									<div id="form-response" style="margin-top: 20px;"></div>
-								</section>
-								<script>
-									document.getElementById('contact-form').addEventListener('submit', async function (event) {
-										event.preventDefault(); // Empêche la redirection
-								
-										const form = event.target;
-										const formData = new FormData(form); // Récupère les données du formulaire
-								
-										const responseDiv = document.getElementById('form-response');
-								
-										try {
-											const response = await fetch('https://getform.io/f/bejjpdwa', {
-												method: 'POST',
-												body: formData,
-											});
-								
-											if (response.ok) {
-												responseDiv.innerHTML = '<p style="color: green;">Votre message a été envoyé avec succès !</p>';
-												form.reset(); // Réinitialise le formulaire
-											} else {
-												responseDiv.innerHTML = '<p style="color: red;">Une erreur est survenue. Veuillez réessayer.</p>';
-											}
-										} catch (error) {
-											responseDiv.innerHTML = `<p style="color: red;">Une erreur réseau est survenue : ${error.message}</p>`;
-										}
-									});
-								</script>
-                            <div style="display: flex; flex-direction: row; justify-content: space-between;">
-								<div>
-									<ul class="icons">
-										<li><a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-BHGK7QG0PH.png" class="icon brands fa-usb"><span class="label">Tryhackme</span></a></li>
-										<li><a href="https://stackoverflow.com/users/18269270/sinay"  class="icon brands fa-stack-overflow"><span class="label">Stack Overflow</span></a></li>
-										<li><a href="https://www.linkedin.com/in/yanis-ponthou/" class="icon brands fa-linkedin"><span class="label">Instagram</span></a></li>
-										<li><a href="https://github.com/Sinay1005" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-										<li><a href="mailto:ponthou-y@tutanota.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-									</ul>
-								</div>
-								<div>
-									<a data-src="images/CV.pdf" download="Yanis_PONTHOU_CV" class="button icon solid fa-download">CV</a>
-								</div>
+							<div class="field half">
+								<label for="demo-email">Email</label>
+								<input type="email" name="email" id="demo-email" placeholder="Email@gmail.com"
+									required />
 							</div>
+							<div class="field">
+								<label for="demo-message">Message</label>
+								<textarea name="message" id="demo-message" placeholder="Enter your message" rows="6"
+									required></textarea>
+							</div>
+							<!-- Honeypot field to prevent spam -->
+							<input type="hidden" name="_gotcha" style="display:none !important" />
+						</div>
+						<ul class="actions">
+							<li><button type="submit" class="primary">Envoyer le Message</button></li>
+						</ul>
+					</form>
+					<div id="form-response" style="margin-top: 20px;"></div>
+				</section>
+				<script>
+					document.getElementById('contact-form').addEventListener('submit', async function (event) {
+						event.preventDefault(); // Empêche la redirection
 
-							</article>
+						const form = event.target;
+						const formData = new FormData(form); // Récupère les données du formulaire
 
-							<article id="concoursinfo">
-								<div class="container">
-									<h2 class="section-title">🏆 24H Info Challenge</h2>
-									<div class="content">
-									  <p>
-										Lors du prestigieux concours des <strong>24h des IUT Informatique</strong>, organisé à Bourg-en-Bresse, 
-										notre équipe <strong>Breizh Power</strong> a représenté fièrement l'<strong>IUT de Lannion</strong>. 
-										Ce défi national a réuni 23 équipes venues de toute la France pour s'affronter dans des épreuves 
-										techniques variées.
-									  </p>
-									  <h3>🎖 Nos performances :</h3>
-									  <ul>
-										<li><strong>🥇 Médaille d’or en développement web</strong> (épreuve nocturne de 22h00 à 6h00).</li>
-										<li><strong>9ème place</strong> en algorithmique.</li>
-										<li><strong>14ème place</strong> en cybersécurité.</li>
-										<li><strong>5ème place</strong> au classement général parmi 23 équipes.</li>
-									  </ul>
-									  <h3>🌟 Notre équipe :</h3>
-									  <ul>
-										<li>Yanis Ponthou</li>
-										<li>Ethan Levacher</li>
-										<li>Yoann Gautier</li>
-										<li>Camille Hacquet</li>
-									  </ul>
-									  <p>
-										Nous remercions l'<strong>IUT de Lannion</strong> pour leur soutien et l'<strong>IUT Lyon 1</strong> 
-										pour l’organisation exceptionnelle de cet événement !
-									  </p>
-									</div>
-									<span class="image main"><img src="images/concoursinfo.webp" alt="" /></span>
-									<h3>🥇 Médaille d’or en développement web</h3>
-									<iframe data-src="images/BreizhPower.pdf" frameborder="0" height="500px" width="100%" class="lazy-pdf"></iframe>
-								  </div>
-							</article>
+						const responseDiv = document.getElementById('form-response');
 
+						try {
+							const response = await fetch('https://getform.io/f/bejjpdwa', {
+								method: 'POST',
+								body: formData,
+							});
 
-							<article id="airbnb">
-								<h2 class="major">AlaizhBreizh</h2>
-								<h2> Description </h2>
-								<h3>Compétences</h3>
-								<h5>Partir des exigences et aller jusqu’à une application complète : </h5>
-								<blockquote>
-										- Réaliser: Développement des fonctionnalités du site en équipe.<br>
-										- Conduire: Application de la méthode Scrum pour coordonner les tâches et suivre les progrès.<br>
-										- Collaborer: Travail en équipe de 7 membres avec utilisation d'outils collaboratifs.<br>
-										- Gérer: Système backend pour la gestion des annonces et des réservation avec planning intéractif.<br>
-										- Administrer: Gestion complète de la base de données, incluant la conception du schéma UML puis sa réalisation en sql
-								</blockquote>					 
-								 <h4>Langages/outils utilisés</h4>
-								 <ul>
-									<li>Figma</li>
-									<li>HTML/CSS</li>
-									<li>PHP</li>
-									<li>SQL</li>
-									<li>JavaScript</li>
-									<li>Trello</li>
-								</ul>
-								<p>Réalisation d'un site web de locations de logements en Bretagne dans le cadre universitaire, au sein d'une équipe de 7 personnes. Le projet a été mené sur 4 semaines en appliquant la méthode Scrum pour organiser la gestion et le développement collaboratif. Des présentations régulières des avancées ont été effectuées auprès de clients fictifs, simulant un contexte professionnel.</p>
-								<p><a href="https://github.com/OTPSpecter/MKWeb/tree/master" target="_blank">Lien du repository Github pour plus de détails</a></p>
-								<span class="image main"><img src="images/Alhaiz_Breizh_2.webp" alt="" /></span>
-								<span class="image main"><img src="images/airbnb.png" alt="" /></span>
-							</article>
+							if (response.ok) {
+								responseDiv.innerHTML = '<p style="color: green;">Votre message a été envoyé avec succès !</p>';
+								form.reset(); // Réinitialise le formulaire
+							} else {
+								responseDiv.innerHTML = '<p style="color: red;">Une erreur est survenue. Veuillez réessayer.</p>';
+							}
+						} catch (error) {
+							responseDiv.innerHTML = `<p style="color: red;">Une erreur réseau est survenue : ${error.message}</p>`;
+						}
+					});
+				</script>
+				<div style="display: flex; flex-direction: row; justify-content: space-between;">
+					<div>
+						<ul class="icons">
+							<li><a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-BHGK7QG0PH.png"
+									class="icon brands fa-usb"><span class="label">Tryhackme</span></a></li>
+							<li><a href="https://stackoverflow.com/users/18269270/sinay"
+									class="icon brands fa-stack-overflow"><span class="label">Stack Overflow</span></a>
+							</li>
+							<li><a href="https://www.linkedin.com/in/yanis-ponthou/"
+									class="icon brands fa-linkedin"><span class="label">Instagram</span></a></li>
+							<li><a href="https://github.com/Sinay1005" class="icon brands fa-github"><span
+										class="label">GitHub</span></a></li>
+							<li><a href="mailto:ponthou-y@tutanota.com" class="icon solid fa-envelope"><span
+										class="label">Email</span></a></li>
+						</ul>
+					</div>
+					<div>
+						<a href="images/CV.pdf" download="Yanis_PONTHOU_CV" class="button icon solid fa-download">CV</a>
+					</div>
+				</div>
 
-							<article id="pokego">
-								<h2 class="major">Projet WebApp PokémonGO</h2>
-								<h2>Description </h2>
-								<h3>Compétences</h3>
-								<blockquote>
-									- Réaliser: Conception et développement d'une interface utilisateur intuitive permettant d'afficher les détails des Pokémon, avec des données récupérées via une API. <br>
-									- Collaborer: Travail en équipe avec des outils collaboratifs pour gérer le projet. <br>
-									- Optimiser : Optimisation de la manipulation du Dom pour les filtres, tries et l'initialisation des pokemon.
-								</blockquote>					 
-								 <h4>Langages/outils utilisés</h4>
-								 <ul>
-									<li>HTML/CSS</li>
-									<li>JS</li>
-								</ul>
-								<h4>
-									Fonctionnalités principales
-								</h4>
-								<p>
-									- Exploration des Pokémons : Affichage détaillé des informations sur les Pokémons à partir d’un API Web Service. <br>
-									- Recherche avancée : Fonctionnalités de tri et de filtrage selon des critères spécifiques comme le type, les statistiques ou le nom. <br>
-									- Simulation de combats : Une version simplifiée permettant de simuler des affrontements entre Pokémons. <br>
-									- Dynamisme : Rafraîchissement des données en temps réel sans rechargement complet de la page.
-								</p>
-								<p>
-									Création d’une application web interactive permettant d’explorer l’univers des Pokémons de manière dynamique. Ce projet, réalisé en trois étapes, met en œuvre les concepts fondamentaux de développement web tels que la manipulation du DOM, la gestion des requêtes API, et le développement d’une Single Page Application (SPA).
-								</p>
-								<p><a href="https://github.com/OTPSpecter/PokemonWebSiteIUTLannion" target="_blank">Lien du repository Github pour plus de détails</a></p>
-								<span class="image main"><img src="images/pokemongo1.webp" alt="" /></span>
-								<span class="image main"><img src="images/pokemongo2.webp" alt="" /></span>
-							</article>
+			</article>
 
-							<article id="PageRank">
-								<h2 class="major">Comment fonctionne le PageRank</h2>
-								<h3>Sujet : Comment a évolué le web et ses algorithmes tels que Page-Rank ? </h3>
-								<p>Lors de mon Grand Oral, j’ai exploré l’histoire du Web, ses fondements, et la façon dont l’algorithme PageRank, développé par Larry Page et Sergey Brin en 1997, a transformé la manière dont nous accédons aux informations en ligne. J’ai démontré comment cet algorithme révolutionnaire, inspiré des méthodes scientifiques de citation, attribue une importance aux pages web en analysant les liens entrants et leur qualité.</p>
-								<h3>Points clés :</h3>
-								<ul>
-									<li>Origines du Web : Création par Tim Berners-Lee en 1989, dans le but de partager des informations via des liens hypertextes.</li>
-									<li>Naissance de PageRank : Développé pour classer les pages web de manière pertinente, en évaluant les "votes" que représentent les liens externes.</li>
-									<li>Calcul du PageRank :
-										<ul style="margin: 0 0 0 0;">
-											<li>Utilisation de la formule mathématique :</li>
-											<ul style="margin: 0 0 0 0;">
-												<li>PR(P)=1−dN+d×∑i∈in(P)PR(i)out(i)</li>
-												<li>PR(P)=N1−d​+d×i∈in(P)∑​out(i)PR(i)</li>
-											</ul>
-											<li>Introduction du facteur d’amortissement d pour refléter le comportement aléatoire des utilisateurs.</li>
-										</ul>
-									</li>
-									<li>Impact : Une approche novatrice qui a permis à Google de devenir le moteur de recherche le plus utilisé au monde.</li>
-								</ul>
-								<iframe data-src="images/oraleMath.pdf" frameborder="0" height="500px" width="100%" class="lazy-pdf"></iframe>
-							</article>
-							
-<!-- .config -->
-							<article id="config">
-								<h2 class="major">.Config</h2>
-								 <h2> Description </h2>
-								 <p> Projet de groupe (3 membres) en cours de réalisation, projet pour mettre en pratique ce que l'on apprenait en NSI.</p>
-								 	<blockquote> 
-									Un site web dédié au stockage de fichiers de configuration Linux pour divers programmes, ainsi qu'une plateforme de téléchargement pour de nombreuses distributions Linux.</blockquote>
+			<article id="concoursinfo">
+				<div class="container">
+					<h2 class="section-title">🏆 24H Info Challenge</h2>
+					<div class="content">
+						<p>
+							Lors du prestigieux concours des <strong>24h des IUT Informatique</strong>, organisé à
+							Bourg-en-Bresse,
+							notre équipe <strong>Breizh Power</strong> a représenté fièrement l'<strong>IUT de
+								Lannion</strong>.
+							Ce défi national a réuni 23 équipes venues de toute la France pour s'affronter dans des
+							épreuves
+							techniques variées.
+						</p>
+						<h3>🎖 Nos performances :</h3>
+						<ul>
+							<li><strong>🥇 Médaille d’or en développement web</strong> (épreuve nocturne de 22h00 à
+								6h00).</li>
+							<li><strong>9ème place</strong> en algorithmique.</li>
+							<li><strong>14ème place</strong> en cybersécurité.</li>
+							<li><strong>5ème place</strong> au classement général parmi 23 équipes.</li>
+						</ul>
+						<h3>🌟 Notre équipe :</h3>
+						<ul>
+							<li>Yanis Ponthou</li>
+							<li>Ethan Levacher</li>
+							<li>Yoann Gautier</li>
+							<li>Camille Hacquet</li>
+						</ul>
+						<p>
+							Nous remercions l'<strong>IUT de Lannion</strong> pour leur soutien et l'<strong>IUT Lyon
+								1</strong>
+							pour l’organisation exceptionnelle de cet événement !
+						</p>
+					</div>
+					<span class="image main"><img src="images/concoursinfo.webp" alt="" /></span>
+					<h3>🥇 Médaille d’or en développement web</h3>
+					<iframe data-src="images/BreizhPower.pdf" frameborder="0" height="500px" width="100%"
+						class="lazy-pdf"></iframe>
+				</div>
+			</article>
 
 
-								</p>
-								<p> Langage et librairie utilisé :</p>
-								<ul>
-									<li>Python</li>
-									<li>Flask / HTML</li>
-									<li>Flask-SQLAlchemy</li>
-									<li>csvs-to-sqlite</li>
-								</ul>
+			<article id="airbnb">
+				<h2 class="major">AlaizhBreizh</h2>
+				<h2> Description </h2>
+				<h3>Compétences</h3>
+				<h5>Partir des exigences et aller jusqu’à une application complète : </h5>
+				<blockquote>
+					- Réaliser: Développement des fonctionnalités du site en équipe.<br>
+					- Conduire: Application de la méthode Scrum pour coordonner les tâches et suivre les progrès.<br>
+					- Collaborer: Travail en équipe de 7 membres avec utilisation d'outils collaboratifs.<br>
+					- Gérer: Système backend pour la gestion des annonces et des réservation avec planning
+					intéractif.<br>
+					- Administrer: Gestion complète de la base de données, incluant la conception du schéma UML puis sa
+					réalisation en sql
+				</blockquote>
+				<h4>Langages/outils utilisés</h4>
+				<ul>
+					<li>Figma</li>
+					<li>HTML/CSS</li>
+					<li>PHP</li>
+					<li>SQL</li>
+					<li>JavaScript</li>
+					<li>Trello</li>
+				</ul>
+				<p>Réalisation d'un site web de locations de logements en Bretagne dans le cadre universitaire, au sein
+					d'une équipe de 7 personnes. Le projet a été mené sur 4 semaines en appliquant la méthode Scrum pour
+					organiser la gestion et le développement collaboratif. Des présentations régulières des avancées ont
+					été effectuées auprès de clients fictifs, simulant un contexte professionnel.</p>
+				<p><a href="https://github.com/OTPSpecter/MKWeb/tree/master" target="_blank">Lien du repository Github
+						pour plus de détails</a></p>
+				<span class="image main"><img src="images/Alhaiz_Breizh_2.webp" alt="" /></span>
+				<span class="image main"><img src="images/airbnb.png" alt="" /></span>
+			</article>
 
+			<article id="pokego">
+				<h2 class="major">Projet WebApp PokémonGO</h2>
+				<h2>Description </h2>
+				<h3>Compétences</h3>
+				<blockquote>
+					- Réaliser: Conception et développement d'une interface utilisateur intuitive permettant d'afficher
+					les détails des Pokémon, avec des données récupérées via une API. <br>
+					- Collaborer: Travail en équipe avec des outils collaboratifs pour gérer le projet. <br>
+					- Optimiser : Optimisation de la manipulation du Dom pour les filtres, tries et l'initialisation des
+					pokemon.
+				</blockquote>
+				<h4>Langages/outils utilisés</h4>
+				<ul>
+					<li>HTML/CSS</li>
+					<li>JS</li>
+				</ul>
+				<h4>
+					Fonctionnalités principales
+				</h4>
+				<p>
+					- Exploration des Pokémons : Affichage détaillé des informations sur les Pokémons à partir d’un API
+					Web Service. <br>
+					- Recherche avancée : Fonctionnalités de tri et de filtrage selon des critères spécifiques comme le
+					type, les statistiques ou le nom. <br>
+					- Simulation de combats : Une version simplifiée permettant de simuler des affrontements entre
+					Pokémons. <br>
+					- Dynamisme : Rafraîchissement des données en temps réel sans rechargement complet de la page.
+				</p>
+				<p>
+					Création d’une application web interactive permettant d’explorer l’univers des Pokémons de manière
+					dynamique. Ce projet, réalisé en trois étapes, met en œuvre les concepts fondamentaux de
+					développement web tels que la manipulation du DOM, la gestion des requêtes API, et le développement
+					d’une Single Page Application (SPA).
+				</p>
+				<p><a href="https://github.com/OTPSpecter/PokemonWebSiteIUTLannion" target="_blank">Lien du repository
+						Github pour plus de détails</a></p>
+				<span class="image main"><img src="images/pokemongo1.webp" alt="" /></span>
+				<span class="image main"><img src="images/pokemongo2.webp" alt="" /></span>
+			</article>
 
-								<p> Lien Github :  Prochainement </p>
-								<span class="image main"><img src="images/DB.PNG" alt="" /></span>
-								<span class="image main"><img src="images/Register.PNG" alt="" /></span>
-							</article>
-
-<!-- Puissance 4 -->
-						<article id="puissance4">
-							<h2 class="major">Puissance 4</h2>
-							<h2> Description </h2>
-							<h3>Compétences</h3>
-							<blockquote>
-								"Développer des applications informatiques simples"
-							</blockquote>					 
-							 <h4>Langages/outils utilisés</h4>
-							 <ul>
-								<li>Figma</li>
-								<li>Doxygen</li>
-								<li>Visual studio code</li>
-								<li>Langage C</li>
-								<li>Pseudo code</li>
+			<article id="PageRank">
+				<h2 class="major">Comment fonctionne le PageRank</h2>
+				<h3>Sujet : Comment a évolué le web et ses algorithmes tels que Page-Rank ? </h3>
+				<p>Lors de mon Grand Oral, j’ai exploré l’histoire du Web, ses fondements, et la façon dont l’algorithme
+					PageRank, développé par Larry Page et Sergey Brin en 1997, a transformé la manière dont nous
+					accédons aux informations en ligne. J’ai démontré comment cet algorithme révolutionnaire, inspiré
+					des méthodes scientifiques de citation, attribue une importance aux pages web en analysant les liens
+					entrants et leur qualité.</p>
+				<h3>Points clés :</h3>
+				<ul>
+					<li>Origines du Web : Création par Tim Berners-Lee en 1989, dans le but de partager des informations
+						via des liens hypertextes.</li>
+					<li>Naissance de PageRank : Développé pour classer les pages web de manière pertinente, en évaluant
+						les "votes" que représentent les liens externes.</li>
+					<li>Calcul du PageRank :
+						<ul style="margin: 0 0 0 0;">
+							<li>Utilisation de la formule mathématique :</li>
+							<ul style="margin: 0 0 0 0;">
+								<li>PR(P)=1−dN+d×∑i∈in(P)PR(i)out(i)</li>
+								<li>PR(P)=N1−d​+d×i∈in(P)∑​out(i)PR(i)</li>
 							</ul>
-							<p> Projet 1.01 Implémentation d'un puissance 4</p>
-								 <blockquote> 
-								Dans le cadre du projet 1.01 nous avons développé un puissance 4 en suivant plusieurs étapes clé !
-								</blockquote>
-								<ul class="alt">
-									<li><a href="#maquette">La maquette</a></li>
-									<li><a href="#code">Le Code Source</a></li>
-									<li><a href="#test">Cahier de test</a></li>
-									<li><a href="#doxy">Documentation Doxygen</a></li>
-								</ul>
+							<li>Introduction du facteur d’amortissement d pour refléter le comportement aléatoire des
+								utilisateurs.</li>
+						</ul>
+					</li>
+					<li>Impact : Une approche novatrice qui a permis à Google de devenir le moteur de recherche le plus
+						utilisé au monde.</li>
+				</ul>
+				<iframe data-src="images/oraleMath.pdf" frameborder="0" height="500px" width="100%"
+					class="lazy-pdf"></iframe>
+			</article>
 
-						
-							<p id="maquette">- La maquette -</p>
-							<span class="image main"><img src="images/Maquette P4_page-0001.jpg" alt="" /></span>
-
-							<p id="code">- Le Code Source -</p>
-							<p>Quelques images du code source</p>
-							<p><a href="https://github.com/Sinay1005/Puissance4" target="_blank">Lien pour accéder à la page github du projet</a></p>
-							
-							<span class="image main"><img src="images/init.webp" alt="" /></span>
-							<span class="image main"><img src="images/afficher.webp" alt="" /></span>
-							<span class="image main"><img src="images/jouer.webp" alt="" /></span>
-
-							<p id="test">- Cahier de test -</p>
-							
-							<iframe data-src="images/cahier_test.pdf" frameborder="0" height="500px" width="100%" class="lazy-pdf"></iframe>
-
-						</article>
-<!-- .koh sport -->
-						<article id="site">
-							<h2 class="major">KOH SPORT</h2>
-							<h3>Compétences</h3>
-							<blockquote>
-								"Identifier les besoins métiers des clients et des utilisateurs"
-							</blockquote>	
-							<h2> projet 1.05 Recueil des besoins </h2>
-							<p>L'objectif de ce projet est de créer un site web à partir d'une interview fictive. Ce projet à été réalisé par groupe de 4 personnes</p>
-								
-							<ul>
-								<li>La maquette du site</li>
-								<li>La charte graphique</li>
-							</ul>
-
-							<p><a href="https://sinay1005.github.io/KOHSPORT/" target="_blank">Lien pour accéder au site</a></p>
-							<p><a href="https://github.com/Sinay1005/KOHSPORT" target="_blank">Lien du repository Github pour plus de détails</a></p>
+			<!-- .config -->
+			<article id="config">
+				<h2 class="major">.Config</h2>
+				<h2> Description </h2>
+				<p> Projet de groupe (3 membres) en cours de réalisation, projet pour mettre en pratique ce que l'on
+					apprenait en NSI.</p>
+				<blockquote>
+					Un site web dédié au stockage de fichiers de configuration Linux pour divers programmes, ainsi
+					qu'une plateforme de téléchargement pour de nombreuses distributions Linux.</blockquote>
 
 
-							<iframe data-src="images/A21_Maquette-min.pdf" frameborder="0" height="500px" width="100%" class="lazy-pdf"></iframe>
+				</p>
+				<p> Langage et librairie utilisé :</p>
+				<ul>
+					<li>Python</li>
+					<li>Flask / HTML</li>
+					<li>Flask-SQLAlchemy</li>
+					<li>csvs-to-sqlite</li>
+				</ul>
 
-							<p>La charte graphique</p>
 
-							<iframe data-src="images/A_21Charte_Graphique.pdf" frameborder="0" height="500px" width="100%" class="lazy-pdf"></iframe>
-						</article>
+				<p> Lien Github : Prochainement </p>
+				<span class="image main"><img src="images/DB.PNG" alt="" /></span>
+				<span class="image main"><img src="images/Register.PNG" alt="" /></span>
+			</article>
 
-<!-- "Ia" Puissance 4-->
-						<article id="ia">
-							<h2 class="major">"IA" Puissance 4</h2>
-							<h2> Description </h2>
-							<h3>Compétences</h3>
-							<blockquote>
-								"Appréhender et construire des algorithmes"
-							</blockquote>	
-							<p> Amélioration du programme de Puissance4 pour permettre aux utilisateurs de jouer contre l'ordinateur</p>
-							<ul>
-								<li>Langage utilisé : C</li>
-							</ul>
+			<!-- Puissance 4 -->
+			<article id="puissance4">
+				<h2 class="major">Puissance 4</h2>
+				<h2> Description </h2>
+				<h3>Compétences</h3>
+				<blockquote>
+					"Développer des applications informatiques simples"
+				</blockquote>
+				<h4>Langages/outils utilisés</h4>
+				<ul>
+					<li>Figma</li>
+					<li>Doxygen</li>
+					<li>Visual studio code</li>
+					<li>Langage C</li>
+					<li>Pseudo code</li>
+				</ul>
+				<p> Projet 1.01 Implémentation d'un puissance 4</p>
+				<blockquote>
+					Dans le cadre du projet 1.01 nous avons développé un puissance 4 en suivant plusieurs étapes clé !
+				</blockquote>
+				<ul class="alt">
+					<li><a href="#maquette">La maquette</a></li>
+					<li><a href="#code">Le Code Source</a></li>
+					<li><a href="#test">Cahier de test</a></li>
+					<li><a href="#doxy">Documentation Doxygen</a></li>
+				</ul>
 
-							<h3>Descriptif des stratégies</h3>
-							<iframe data-src="images/Ia.pdf" frameborder="0" height="500px" width="100%" class="lazy-pdf"></iframe>
-							<h3>Code source</h3>
-							<p>Voici un exemple d'une des fonctions du code source</p>
-							<p><a href="https://github.com/Sinay1005/Puissance4/blob/main/IA/StrategieFinal_YANIS_ETHAN_ETHAN_1A2.c" target="_blank">Lien pour accéder à la page github du projet</a></p>
-							<span class="image main"><img src="images/ia.png" alt="" /></span>
-						</article>
 
-<!--PDF MAKER-->
-						<article id="PDFMAKER">
-							<h2 class="major">INSTALLATION D’UN POSTE DE DÉVELOPPEMENT : PDF MAKER BY DOCKER</h2>
-							<h2> Description </h2>
-							<h3>Compétences</h3>
-							<blockquote>
-								"Installer et configurer un poste de travail"
-							</blockquote>	
-							<p> Projet 1.03 Implémentation d'un puissance 4</p>
-								<blockquote> 
-									Dans le cadre du projet 1.03, nous avons développé un outil permettant la création d'une série de PDF destinés aux équipes commerciales régionales. Cet outil traite et formate les informations brutes fournies par le client afin de produire des résultats trimestriels clairs et attrayants. Il a été conçu pour être utilisé de manière récurrente par n'importe quel membre de l'équipe de développement. Bien qu'il ne soit pas prévu pour une utilisation par les utilisateurs finaux, une documentation détaillée accompagne l'outil pour guider un technicien dans le traitement et la production des PDF, sans nécessiter de connaissances spécifiques sur le projet.
-							   </blockquote>
-							<p> Langages/outils utilisés</p>
-							<ul>
-								<li>Langage shell : Bash</li>
-								<li>Langage PHP</li>
-								<li>DOCKER</li>
-								<li>HTML / CSS</li>
-							</ul>
+				<p id="maquette">- La maquette -</p>
+				<span class="image main"><img src="images/Maquette P4_page-0001.jpg" alt="" /></span>
 
-							<p>Pour réaliser ce projet nous avons réalisé plusieurs scripts puis enfin nous avons réalisé le script final</p>
-							<ul>
-								<li>HTML2PDF.sh</li>
-								<li>QRCode.sh</li>
-								<li>TraitementImage.sh</li>
-								<li>modele.php</li>
-							</ul>
-							<h3>Script final</h3>
-							<ul>
-								<li>Lancement.sh</li>
-							</ul>
-							
-							<a href="https://github.com/Sinay1005/PDFMAKER" target="_blank"> Lien du repository Github pour plus de détails</a>
-							<span class="image main"><img src="images/pdfmaker_lancement.webp" alt="" /></span>
-							<h3>Documentation</h3>
-							<span class="image main"><img src="images/pdfmaker_readme.webp" alt="" /></span>
-						</article>
+				<p id="code">- Le Code Source -</p>
+				<p>Quelques images du code source</p>
+				<p><a href="https://github.com/Sinay1005/Puissance4" target="_blank">Lien pour accéder à la page github
+						du projet</a></p>
 
-<!-- TRANSMUS-->
-						<article id="TRANSMUS">
-							<h2 class="major">CRÉATION D'UNE BASE DE DONNÉES : TRANSMUSICALES</h2>
-							<h3>Description</h3>
-							<h3>Compétences</h3>
-							<blockquote>
-								"Concevoir et mettre en place une base de données à partir d'un cahier des charges client" 
-							</blockquote>	
-							<h2>Création de bases de données</h2>
-							<blockquote>
-							En partant d’un besoin exprimé par un·e client·e (en
-							langage naturel), il faut étudier/modéliser puis mettre en
-							œuvre une base de données relationnelle portant sur une
-							partie du système d’information à développer. Ce projet
-							permet un premier contact avec la modélisation et
-							l’implémentation d’une base de données relationnelle
-							</blockquote>
+				<span class="image main"><img src="images/init.webp" alt="" /></span>
+				<span class="image main"><img src="images/afficher.webp" alt="" /></span>
+				<span class="image main"><img src="images/jouer.webp" alt="" /></span>
 
-							<h3>Langages/outils utilisés</h3>
-							<ul>
-								<li>SqlWorkBench</li>
-								<li>UML</li>
-								<li>SQL</li>
-							</ul>
-							<h4>Livrable 1 | Diagramme de classe + rapport</h4>
-							<iframe data-src="images/BDD.pdf" frameborder="0" height="500px" width="100%" class="lazy-pdf"></iframe>
-							<h4>Livrable 2 | Script SQL de création de la base de donnée</h4>
-							<pre>
+				<p id="test">- Cahier de test -</p>
+
+				<iframe data-src="images/cahier_test.pdf" frameborder="0" height="500px" width="100%"
+					class="lazy-pdf"></iframe>
+
+			</article>
+			<!-- .koh sport -->
+			<article id="site">
+				<h2 class="major">KOH SPORT</h2>
+				<h3>Compétences</h3>
+				<blockquote>
+					"Identifier les besoins métiers des clients et des utilisateurs"
+				</blockquote>
+				<h2> projet 1.05 Recueil des besoins </h2>
+				<p>L'objectif de ce projet est de créer un site web à partir d'une interview fictive. Ce projet à été
+					réalisé par groupe de 4 personnes</p>
+
+				<ul>
+					<li>La maquette du site</li>
+					<li>La charte graphique</li>
+				</ul>
+
+				<p><a href="https://sinay1005.github.io/KOHSPORT/" target="_blank">Lien pour accéder au site</a></p>
+				<p><a href="https://github.com/Sinay1005/KOHSPORT" target="_blank">Lien du repository Github pour plus
+						de détails</a></p>
+
+
+				<iframe data-src="images/A21_Maquette-min.pdf" frameborder="0" height="500px" width="100%"
+					class="lazy-pdf"></iframe>
+
+				<p>La charte graphique</p>
+
+				<iframe data-src="images/A_21Charte_Graphique.pdf" frameborder="0" height="500px" width="100%"
+					class="lazy-pdf"></iframe>
+			</article>
+
+			<!-- "Ia" Puissance 4-->
+			<article id="ia">
+				<h2 class="major">"IA" Puissance 4</h2>
+				<h2> Description </h2>
+				<h3>Compétences</h3>
+				<blockquote>
+					"Appréhender et construire des algorithmes"
+				</blockquote>
+				<p> Amélioration du programme de Puissance4 pour permettre aux utilisateurs de jouer contre l'ordinateur
+				</p>
+				<ul>
+					<li>Langage utilisé : C</li>
+				</ul>
+
+				<h3>Descriptif des stratégies</h3>
+				<iframe data-src="images/Ia.pdf" frameborder="0" height="500px" width="100%" class="lazy-pdf"></iframe>
+				<h3>Code source</h3>
+				<p>Voici un exemple d'une des fonctions du code source</p>
+				<p><a href="https://github.com/Sinay1005/Puissance4/blob/main/IA/StrategieFinal_YANIS_ETHAN_ETHAN_1A2.c"
+						target="_blank">Lien pour accéder à la page github du projet</a></p>
+				<span class="image main"><img src="images/ia.png" alt="" /></span>
+			</article>
+
+			<!--PDF MAKER-->
+			<article id="PDFMAKER">
+				<h2 class="major">INSTALLATION D’UN POSTE DE DÉVELOPPEMENT : PDF MAKER BY DOCKER</h2>
+				<h2> Description </h2>
+				<h3>Compétences</h3>
+				<blockquote>
+					"Installer et configurer un poste de travail"
+				</blockquote>
+				<p> Projet 1.03 Implémentation d'un puissance 4</p>
+				<blockquote>
+					Dans le cadre du projet 1.03, nous avons développé un outil permettant la création d'une série de
+					PDF destinés aux équipes commerciales régionales. Cet outil traite et formate les informations
+					brutes fournies par le client afin de produire des résultats trimestriels clairs et attrayants. Il a
+					été conçu pour être utilisé de manière récurrente par n'importe quel membre de l'équipe de
+					développement. Bien qu'il ne soit pas prévu pour une utilisation par les utilisateurs finaux, une
+					documentation détaillée accompagne l'outil pour guider un technicien dans le traitement et la
+					production des PDF, sans nécessiter de connaissances spécifiques sur le projet.
+				</blockquote>
+				<p> Langages/outils utilisés</p>
+				<ul>
+					<li>Langage shell : Bash</li>
+					<li>Langage PHP</li>
+					<li>DOCKER</li>
+					<li>HTML / CSS</li>
+				</ul>
+
+				<p>Pour réaliser ce projet nous avons réalisé plusieurs scripts puis enfin nous avons réalisé le script
+					final</p>
+				<ul>
+					<li>HTML2PDF.sh</li>
+					<li>QRCode.sh</li>
+					<li>TraitementImage.sh</li>
+					<li>modele.php</li>
+				</ul>
+				<h3>Script final</h3>
+				<ul>
+					<li>Lancement.sh</li>
+				</ul>
+
+				<a href="https://github.com/Sinay1005/PDFMAKER" target="_blank"> Lien du repository Github pour plus de
+					détails</a>
+				<span class="image main"><img src="images/pdfmaker_lancement.webp" alt="" /></span>
+				<h3>Documentation</h3>
+				<span class="image main"><img src="images/pdfmaker_readme.webp" alt="" /></span>
+			</article>
+
+			<!-- TRANSMUS-->
+			<article id="TRANSMUS">
+				<h2 class="major">CRÉATION D'UNE BASE DE DONNÉES : TRANSMUSICALES</h2>
+				<h3>Description</h3>
+				<h3>Compétences</h3>
+				<blockquote>
+					"Concevoir et mettre en place une base de données à partir d'un cahier des charges client"
+				</blockquote>
+				<h2>Création de bases de données</h2>
+				<blockquote>
+					En partant d’un besoin exprimé par un·e client·e (en
+					langage naturel), il faut étudier/modéliser puis mettre en
+					œuvre une base de données relationnelle portant sur une
+					partie du système d’information à développer. Ce projet
+					permet un premier contact avec la modélisation et
+					l’implémentation d’une base de données relationnelle
+				</blockquote>
+
+				<h3>Langages/outils utilisés</h3>
+				<ul>
+					<li>SqlWorkBench</li>
+					<li>UML</li>
+					<li>SQL</li>
+				</ul>
+				<h4>Livrable 1 | Diagramme de classe + rapport</h4>
+				<iframe data-src="images/BDD.pdf" frameborder="0" height="500px" width="100%" class="lazy-pdf"></iframe>
+				<h4>Livrable 2 | Script SQL de création de la base de donnée</h4>
+				<pre>
 								<code>
 DROP SCHEMA IF EXISTS transmusical_a22 CASCADE;
 create schema transmusical_a22;
@@ -637,57 +753,70 @@ FOREIGN KEY(se_deroule) REFERENCES _edition(nom_edition);
 									
 								</code>
 							</pre>
-						</article>
+			</article>
 
-<!--LVMH-->
-												<article id="LVMH">
-							<h2 class="major">DÉCOUVERTE DE L'ENVIRONNEMENT ÉCONOMIQUE ET ÉCOLOGIQUE : LVMH</h2>
-							<h3>Description</h3>
-							<h3>Compétences</h3>
-							<blockquote>
-								"Identifier ses aptitudes pour travailler dans une équipe" 
-							</blockquote>
-							<h3>Présentation</h3>	
-							<blockquote>
-								Découverte des politiques RSE des entreprises et prise de conscience des différentes formes d'action mises en place pour améliorer leur engagement en matière de responsabilité sociale. De plus, exploration de la matrice SWOT pour évaluer les forces, faiblesses, opportunités et menaces liées à la mise en œuvre de ces politiques.
-							</blockquote>
-							<h3>Diaporama : répartition des tâches et présentation de l'organisation choisie</h3>
-							<iframe data-src="images/RSE1.pdf" frameborder="0" height="500px" width="100%" class="lazy-pdf"></iframe>
-							<h3>Diaporama : Soutenance finale</h3>
-							<iframe data-src="images/RSE2.pdf" frameborder="0" height="500px" width="100%" class="lazy-pdf"></iframe>
-							<h3>Dossier de fin projet</h3>
-							<iframe data-src="images/RSE3.pdf" frameborder="0" height="500px" width="100%" class="lazy-pdf"></iframe>
+			<!--LVMH-->
+			<article id="LVMH">
+				<h2 class="major">DÉCOUVERTE DE L'ENVIRONNEMENT ÉCONOMIQUE ET ÉCOLOGIQUE : LVMH</h2>
+				<h3>Description</h3>
+				<h3>Compétences</h3>
+				<blockquote>
+					"Identifier ses aptitudes pour travailler dans une équipe"
+				</blockquote>
+				<h3>Présentation</h3>
+				<blockquote>
+					Découverte des politiques RSE des entreprises et prise de conscience des différentes formes d'action
+					mises en place pour améliorer leur engagement en matière de responsabilité sociale. De plus,
+					exploration de la matrice SWOT pour évaluer les forces, faiblesses, opportunités et menaces liées à
+					la mise en œuvre de ces politiques.
+				</blockquote>
+				<h3>Diaporama : répartition des tâches et présentation de l'organisation choisie</h3>
+				<iframe data-src="images/RSE1.pdf" frameborder="0" height="500px" width="100%"
+					class="lazy-pdf"></iframe>
+				<h3>Diaporama : Soutenance finale</h3>
+				<iframe data-src="images/RSE2.pdf" frameborder="0" height="500px" width="100%"
+					class="lazy-pdf"></iframe>
+				<h3>Dossier de fin projet</h3>
+				<iframe data-src="images/RSE3.pdf" frameborder="0" height="500px" width="100%"
+					class="lazy-pdf"></iframe>
 
-							</article>
+			</article>
 
-						<!-- admin -->
-						<article id="admin">
-							<center><h2>  Mais qu'est-ce que tu fais là toi !! </h2></center>
+			<!-- admin -->
+			<article id="admin">
+				<center>
+					<h2> Mais qu'est-ce que tu fais là toi !! </h2>
+				</center>
 
-							<p> Avec le challenge Tryhackme j'ai appris ce que c'était une <u> Vulnérabilité IDOR </u></p>
-							<span class="image main"><img src="images/IDOR.PNG" alt="" /></span>
-						</article>
+				<p> Avec le challenge Tryhackme j'ai appris ce que c'était une <u> Vulnérabilité IDOR </u></p>
+				<span class="image main"><img src="images/IDOR.PNG" alt="" /></span>
+			</article>
 
-						<!-- Elements -->
-							 <article id="6a7f245843454cf4f28ad7c5e2572aa2"> 
-								<h2 class="major">Elements</h2>
+			<!-- Elements -->
+			<article id="6a7f245843454cf4f28ad7c5e2572aa2">
+				<h2 class="major">Elements</h2>
 
-								<section>
-									<h3 class="major">Text</h3>
-									<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-									This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
-									<hr />
-									<h2>Heading Level 2</h2>
-									<h3>Heading Level 3</h3>
-									<h4>Heading Level 4</h4>
-									<h5>Heading Level 5</h5>
-									<h6>Heading Level 6</h6>
-									<hr />
-									<h4>Blockquote</h4>
-									<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
-									<h4>Preformatted</h4>
-									<pre><code>i = 0;
+				<section>
+					<h3 class="major">Text</h3>
+					<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is
+						<em>emphasized</em>.
+						This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+						This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a
+							href="#">this is a link</a>.</p>
+					<hr />
+					<h2>Heading Level 2</h2>
+					<h3>Heading Level 3</h3>
+					<h4>Heading Level 4</h4>
+					<h5>Heading Level 5</h5>
+					<h6>Heading Level 6</h6>
+					<hr />
+					<h4>Blockquote</h4>
+					<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus
+						euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis
+						iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem
+						ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
+					<h4>Preformatted</h4>
+					<pre><code>i = 0;
 
 while (!deck.isInOrder()) {
     print 'Iteration ' + i;
@@ -696,236 +825,239 @@ while (!deck.isInOrder()) {
 }
 
 print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
-								</section>
+				</section>
 
-								<section>
-									<h3 class="major">Lists</h3>
+				<section>
+					<h3 class="major">Lists</h3>
 
-									<h4>Unordered</h4>
-									<ul>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Sagittis adipiscing.</li>
-										<li>Felis enim feugiat.</li>
-									</ul>
+					<h4>Unordered</h4>
+					<ul>
+						<li>Dolor pulvinar etiam.</li>
+						<li>Sagittis adipiscing.</li>
+						<li>Felis enim feugiat.</li>
+					</ul>
 
-									<h4>Alternate</h4>
-									<ul class="alt">
-										<li>Dolor pulvinar etiam.</li>
-										<li>Sagittis adipiscing.</li>
-										<li>Felis enim feugiat.</li>
-									</ul>
+					<h4>Alternate</h4>
+					<ul class="alt">
+						<li>Dolor pulvinar etiam.</li>
+						<li>Sagittis adipiscing.</li>
+						<li>Felis enim feugiat.</li>
+					</ul>
 
-									<h4>Ordered</h4>
-									<ol>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Etiam vel felis viverra.</li>
-										<li>Felis enim feugiat.</li>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Etiam vel felis lorem.</li>
-										<li>Felis enim et feugiat.</li>
-									</ol>
-									<h4>Icons</h4>
-									<ul class="icons">
-										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-									</ul>
+					<h4>Ordered</h4>
+					<ol>
+						<li>Dolor pulvinar etiam.</li>
+						<li>Etiam vel felis viverra.</li>
+						<li>Felis enim feugiat.</li>
+						<li>Dolor pulvinar etiam.</li>
+						<li>Etiam vel felis lorem.</li>
+						<li>Felis enim et feugiat.</li>
+					</ol>
+					<h4>Icons</h4>
+					<ul class="icons">
+						<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+					</ul>
 
-									<h4>Actions</h4>
-									<ul class="actions">
-										<li><a href="#" class="button primary">Default</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary">Default</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-								</section>
+					<h4>Actions</h4>
+					<ul class="actions">
+						<li><a href="#" class="button primary">Default</a></li>
+						<li><a href="#" class="button">Default</a></li>
+					</ul>
+					<ul class="actions stacked">
+						<li><a href="#" class="button primary">Default</a></li>
+						<li><a href="#" class="button">Default</a></li>
+					</ul>
+				</section>
 
-								<section>
-									<h3 class="major">Table</h3>
-									<h4>Default</h4>
-									<div class="table-wrapper">
-										<table>
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Description</th>
-													<th>Price</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Item One</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Two</td>
-													<td>Vis ac commodo adipiscing arcu aliquet.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Three</td>
-													<td> Morbi faucibus arcu accumsan lorem.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Four</td>
-													<td>Vitae integer tempus condimentum.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Five</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-											</tbody>
-											<tfoot>
-												<tr>
-													<td colspan="2"></td>
-													<td>100.00</td>
-												</tr>
-											</tfoot>
-										</table>
-									</div>
-
-									<h4>Alternate</h4>
-									<div class="table-wrapper">
-										<table class="alt">
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Description</th>
-													<th>Price</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Item One</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Two</td>
-													<td>Vis ac commodo adipiscing arcu aliquet.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Three</td>
-													<td> Morbi faucibus arcu accumsan lorem.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Four</td>
-													<td>Vitae integer tempus condimentum.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Five</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-											</tbody>
-											<tfoot>
-												<tr>
-													<td colspan="2"></td>
-													<td>100.00</td>
-												</tr>
-											</tfoot>
-										</table>
-									</div>
-								</section>
-
-								<section>
-									<h3 class="major">Buttons</h3>
-									<ul class="actions">
-										<li><a href="#" class="button primary">Primary</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="#" class="button">Default</a></li>
-										<li><a href="#" class="button small">Small</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
-										<li><a href="#" class="button icon solid fa-download">Icon</a></li>
-									</ul>
-									<ul class="actions">
-										<li><span class="button primary disabled">Disabled</span></li>
-										<li><span class="button disabled">Disabled</span></li>
-									</ul>
-								</section>
-
-								<section>
-									<h3 class="major">Form</h3>
-									<form method="post" action="#">
-										<div class="fields">
-											<div class="field half">
-												<label for="demo-name">Name</label>
-												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
-											</div>
-											<div class="field half">
-												<label for="demo-email">Email</label>
-												<input type="email" name="demo-email" id="demo-email" value="" placeholder="jane@untitled.tld" />
-											</div>
-											<div class="field">
-												<label for="demo-category">Category</label>
-												<select name="demo-category" id="demo-category">
-													<option value="">-</option>
-													<option value="1">Manufacturing</option>
-													<option value="1">Shipping</option>
-													<option value="1">Administration</option>
-													<option value="1">Human Resources</option>
-												</select>
-											</div>
-											<div class="field half">
-												<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-												<label for="demo-priority-low">Low</label>
-											</div>
-											<div class="field half">
-												<input type="radio" id="demo-priority-high" name="demo-priority">
-												<label for="demo-priority-high">High</label>
-											</div>
-											<div class="field half">
-												<input type="checkbox" id="demo-copy" name="demo-copy">
-												<label for="demo-copy">Email me a copy</label>
-											</div>
-											<div class="field half">
-												<input type="checkbox" id="demo-human" name="demo-human" checked>
-												<label for="demo-human">Not a robot</label>
-											</div>
-											<div class="field">
-												<label for="demo-message">Message</label>
-												<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-											</div>
-										</div>
-										<ul class="actions">
-											<li><input type="submit" value="Send Message" class="primary" /></li>
-											<li><input type="reset" value="Reset" /></li>
-										</ul>
-									</form>
-								</section>
-
-							</article>
-
+				<section>
+					<h3 class="major">Table</h3>
+					<h4>Default</h4>
+					<div class="table-wrapper">
+						<table>
+							<thead>
+								<tr>
+									<th>Name</th>
+									<th>Description</th>
+									<th>Price</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Item One</td>
+									<td>Ante turpis integer aliquet porttitor.</td>
+									<td>29.99</td>
+								</tr>
+								<tr>
+									<td>Item Two</td>
+									<td>Vis ac commodo adipiscing arcu aliquet.</td>
+									<td>19.99</td>
+								</tr>
+								<tr>
+									<td>Item Three</td>
+									<td> Morbi faucibus arcu accumsan lorem.</td>
+									<td>29.99</td>
+								</tr>
+								<tr>
+									<td>Item Four</td>
+									<td>Vitae integer tempus condimentum.</td>
+									<td>19.99</td>
+								</tr>
+								<tr>
+									<td>Item Five</td>
+									<td>Ante turpis integer aliquet porttitor.</td>
+									<td>29.99</td>
+								</tr>
+							</tbody>
+							<tfoot>
+								<tr>
+									<td colspan="2"></td>
+									<td>100.00</td>
+								</tr>
+							</tfoot>
+						</table>
 					</div>
 
-				<!-- Footer -->
-					<footer id="footer">
-					</footer>
+					<h4>Alternate</h4>
+					<div class="table-wrapper">
+						<table class="alt">
+							<thead>
+								<tr>
+									<th>Name</th>
+									<th>Description</th>
+									<th>Price</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Item One</td>
+									<td>Ante turpis integer aliquet porttitor.</td>
+									<td>29.99</td>
+								</tr>
+								<tr>
+									<td>Item Two</td>
+									<td>Vis ac commodo adipiscing arcu aliquet.</td>
+									<td>19.99</td>
+								</tr>
+								<tr>
+									<td>Item Three</td>
+									<td> Morbi faucibus arcu accumsan lorem.</td>
+									<td>29.99</td>
+								</tr>
+								<tr>
+									<td>Item Four</td>
+									<td>Vitae integer tempus condimentum.</td>
+									<td>19.99</td>
+								</tr>
+								<tr>
+									<td>Item Five</td>
+									<td>Ante turpis integer aliquet porttitor.</td>
+									<td>29.99</td>
+								</tr>
+							</tbody>
+							<tfoot>
+								<tr>
+									<td colspan="2"></td>
+									<td>100.00</td>
+								</tr>
+							</tfoot>
+						</table>
+					</div>
+				</section>
 
-			</div>
+				<section>
+					<h3 class="major">Buttons</h3>
+					<ul class="actions">
+						<li><a href="#" class="button primary">Primary</a></li>
+						<li><a href="#" class="button">Default</a></li>
+					</ul>
+					<ul class="actions">
+						<li><a href="#" class="button">Default</a></li>
+						<li><a href="#" class="button small">Small</a></li>
+					</ul>
+					<ul class="actions">
+						<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
+						<li><a href="#" class="button icon solid fa-download">Icon</a></li>
+					</ul>
+					<ul class="actions">
+						<li><span class="button primary disabled">Disabled</span></li>
+						<li><span class="button disabled">Disabled</span></li>
+					</ul>
+				</section>
 
-		<!-- BG -->
-			<div id="bg"></div>
+				<section>
+					<h3 class="major">Form</h3>
+					<form method="post" action="#">
+						<div class="fields">
+							<div class="field half">
+								<label for="demo-name">Name</label>
+								<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
+							</div>
+							<div class="field half">
+								<label for="demo-email">Email</label>
+								<input type="email" name="demo-email" id="demo-email" value=""
+									placeholder="jane@untitled.tld" />
+							</div>
+							<div class="field">
+								<label for="demo-category">Category</label>
+								<select name="demo-category" id="demo-category">
+									<option value="">-</option>
+									<option value="1">Manufacturing</option>
+									<option value="1">Shipping</option>
+									<option value="1">Administration</option>
+									<option value="1">Human Resources</option>
+								</select>
+							</div>
+							<div class="field half">
+								<input type="radio" id="demo-priority-low" name="demo-priority" checked>
+								<label for="demo-priority-low">Low</label>
+							</div>
+							<div class="field half">
+								<input type="radio" id="demo-priority-high" name="demo-priority">
+								<label for="demo-priority-high">High</label>
+							</div>
+							<div class="field half">
+								<input type="checkbox" id="demo-copy" name="demo-copy">
+								<label for="demo-copy">Email me a copy</label>
+							</div>
+							<div class="field half">
+								<input type="checkbox" id="demo-human" name="demo-human" checked>
+								<label for="demo-human">Not a robot</label>
+							</div>
+							<div class="field">
+								<label for="demo-message">Message</label>
+								<textarea name="demo-message" id="demo-message" placeholder="Enter your message"
+									rows="6"></textarea>
+							</div>
+						</div>
+						<ul class="actions">
+							<li><input type="submit" value="Send Message" class="primary" /></li>
+							<li><input type="reset" value="Reset" /></li>
+						</ul>
+					</form>
+				</section>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-	</body>
+			</article>
+
+		</div>
+
+		<!-- Footer -->
+		<footer id="footer">
+		</footer>
+
+	</div>
+
+	<!-- BG -->
+	<div id="bg"></div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+</body>
+
 </html>
