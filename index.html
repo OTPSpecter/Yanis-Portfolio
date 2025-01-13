@@ -134,20 +134,72 @@
 <!-- Contact -->
 							<article id="contact">
 								<h2 class="major">Contact</h2>
-								<h3> Vous pouvez me retrouver sur mes différents réseaux...</h3>
-								<p> Mon mail : ponthou-y@tutanota.com </p>
+								<section>
+									<form id="contact-form">
+										<div class="fields">
+											<div class="field half">
+												<label for="demo-name">Prénom</label>
+												<input type="text" name="name" id="demo-name" placeholder="Prenom" required />
+											</div>
+											<div class="field half">
+												<label for="demo-email">Email</label>
+												<input type="email" name="email" id="demo-email" placeholder="Email@gmail.com" required />
+											</div>
+											<div class="field">
+												<label for="demo-message">Message</label>
+												<textarea name="message" id="demo-message" placeholder="Enter your message" rows="6" required></textarea>
+											</div>
+											<!-- Honeypot field to prevent spam -->
+											<input type="hidden" name="_gotcha" style="display:none !important" />
+										</div>
+										<ul class="actions">
+											<li><button type="submit" class="primary">Envoyer le Message</button></li>
+										</ul>
+									</form>
+									<div id="form-response" style="margin-top: 20px;"></div>
+								</section>
+								<script>
+									document.getElementById('contact-form').addEventListener('submit', async function (event) {
+										event.preventDefault(); // Empêche la redirection
+								
+										const form = event.target;
+										const formData = new FormData(form); // Récupère les données du formulaire
+								
+										const responseDiv = document.getElementById('form-response');
+								
+										try {
+											const response = await fetch('https://getform.io/f/bejjpdwa', {
+												method: 'POST',
+												body: formData,
+											});
+								
+											if (response.ok) {
+												responseDiv.innerHTML = '<p style="color: green;">Votre message a été envoyé avec succès !</p>';
+												form.reset(); // Réinitialise le formulaire
+											} else {
+												responseDiv.innerHTML = '<p style="color: red;">Une erreur est survenue. Veuillez réessayer.</p>';
+											}
+										} catch (error) {
+											responseDiv.innerHTML = `<p style="color: red;">Une erreur réseau est survenue : ${error.message}</p>`;
+										}
+									});
+								</script>
+                            <div style="display: flex; flex-direction: row; justify-content: space-between;">
+								<div>
+									<ul class="icons">
+										<li><a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-BHGK7QG0PH.png" class="icon brands fa-usb"><span class="label">Tryhackme</span></a></li>
+										<li><a href="https://stackoverflow.com/users/18269270/sinay"  class="icon brands fa-stack-overflow"><span class="label">Stack Overflow</span></a></li>
+										<li><a href="https://www.linkedin.com/in/yanis-ponthou/" class="icon brands fa-linkedin"><span class="label">Instagram</span></a></li>
+										<li><a href="https://github.com/Sinay1005" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+										<li><a href="mailto:ponthou-y@tutanota.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+									</ul>
+								</div>
+								<div>
+									<a data-src="images/CV.pdf" download="Yanis_PONTHOU_CV" class="button icon solid fa-download">CV</a>
+								</div>
+							</div>
 
-								<ul class="actions">
-									<li><a data-src="images/CV.pdf" download="Yanis_PONTHOU_CV" class="button icon solid fa-download">CV</a></li>
-								</ul>
-								<ul class="icons">
-									<li><a href="https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-BHGK7QG0PH.png" class="icon brands fa-usb"><span class="label">Tryhackme</span></a></li>
-									<li><a href="https://stackoverflow.com/users/18269270/sinay"  class="icon brands fa-stack-overflow"><span class="label">Stack Overflow</span></a></li>
-									<li><a href="https://www.linkedin.com/in/yanis-ponthou/" class="icon brands fa-linkedin"><span class="label">Instagram</span></a></li>
-									<li><a href="https://github.com/Sinay1005" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
 							</article>
-							
 
 							<article id="concoursinfo">
 								<div class="container">
